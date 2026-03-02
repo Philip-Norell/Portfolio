@@ -7,14 +7,14 @@ title: Home
 
 <style>
 #main_content_wrap.outer {
-  max-width: 1400px;    /* widen outer container */
+  max-width: 1200px;    /* widen outer container */
   width: 95%;
   margin-left: auto;    /* center horizontally */
   margin-right: auto;
 }
 
 #main_content.inner {
-  max-width: 1400px;    /* widen inner container */
+  max-width: 1200px;    /* widen inner container */
   width: 95%;
   margin-left: auto;
   margin-right: auto;
