@@ -3,17 +3,55 @@ layout: default
 title: Home
 ---
 
-# Welcome to My Website
-
 <style>
-/* Target the main wrapper in Minimal theme */
-.wrapper {
-  max-width: 1400px !important;  /* widen container */
-  width: 95% !important;          /* responsive width */
-  margin-left: auto !important;   /* center horizontally */
+/* Widen and center the outer wrapper */
+.page-wrapper {
+  max-width: 1400px !important;
+  width: 95% !important;
+  margin-left: auto !important;
   margin-right: auto !important;
 }
+
+/* Also widen and center the main content area */
+.content {
+  max-width: 1400px !important;
+  width: 95% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Tabs styling */
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 1rem;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-weight: bold;
+}
+
+.tab-button.active {
+  border-bottom: 3px solid #4CAF50;
+  color: #4CAF50;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
 </style>
+
+# Welcome to My Website
 
 <div class="tabs">
   <button class="tab-button active" onclick="openTab(event, 'tab1')">Notebook</button>
