@@ -7,7 +7,7 @@ title: Philip Norell's Portfolio
 
 <style>
 #main_content_wrap.outer {
-  max-width: 2000px;    /* widen outer container */
+  max-width: 4000px;    /* widen outer container */
   width: 100%;
   margin-left: auto;    /* center horizontally */
   margin-right: auto;
@@ -57,7 +57,11 @@ title: Philip Norell's Portfolio
 
 <div id="tab1" class="tab-content active">
 
-  # test
+  test
+
+
+
+  
   {% capture notebook %}
   {% include AGOL_Dependency_Automator_GitHub.md %}
   {% endcapture %}
