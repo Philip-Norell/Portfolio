@@ -62,18 +62,18 @@ This script mostly fulfills the same role as Qonda reports. It's a generalized d
 It requires only one manually created input that maps feature classes to REST/referenced services on ArcServers. It was created before I or anyone else in our shop was aware of Qonda,
 and provides some benefits over Qonda such as creating data lineage snapshots. 
 
-<div id="tab1" class="tab-content active" style="border: 1px solid black; padding: 15px;" markdown="1">
+<div id="tab1" class="tab-content" style="border: 1px solid black; padding: 15px;" markdown="1">
   {% capture notebook %}
   {% include AGOL_Dependency_Automator_GitHub.md %}
   {% endcapture %}
   {{ notebook | markdownify }}
 </div>
 
-<div id="tab2" class="tab-content">
-<pre><code>
-# Example Python Code
-print("Hello World")
-</code></pre>
+<div id="tab2" class="tab-content" style="border: 1px solid black; padding: 15px;" markdown="1">
+  {% capture notebook %}
+  {% include Assign_Coords.md %}
+  {% endcapture %}
+  {{ notebook | markdownify }}
 </div>
 
 <div id="tab3" class="tab-content">
