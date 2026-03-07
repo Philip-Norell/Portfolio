@@ -1,11 +1,13 @@
 AGOL Dependency Automator
 
-Purpose: 
-        This script is designed to automate almost all the work involved in creating a comprehensive data lineage for AGOL content.
-    Moreoever, this script also documents feature services that are not consumed by webmaps for the purposes of data governance. 
-    Ouput data is visualized in a series of Excel sheets formatted as sortable dependency matrices. 
+**Summary of Purpose**
+        This script mostly fulfills the same role as Qonda reports. It's a generalized data governance solution that utilized the ArcGIS API for Python to create data lineage documentation. 
+It requires only one manually created input that maps feature classes to REST/referenced services on ArcServers. It was created before I or anyone else in our shop was aware of Qonda,
+and provides some benefits over Qonda such as creating data lineage snapshots. 
 
-Method:
+**Notes on Script**
+
+Method
         There are two avenues of data capture in this script.    
     First, it compiles a dictionary of all webmaps in AGOL and parses their related JSONs to extract the services they depend upon. 
     Those services are then matched to a dictionary of feature services and feature classes, producing a dictionary structured like
