@@ -32,9 +32,6 @@ Misc:
         The dictionary-building code chunks will often return error text along the lines of "Service (ID String) does not exist."
     These are deleted services that retain their itemID but have all attributes such as title and URL erased. If the ID is plugged 
     into a standard AGOL/Portal item URL, it will say the service is deleted or unavailable. 
-
-Documentation location: "filepath\Creating Input Data for Dependency Visualizer.docx"
-
         
 
     
