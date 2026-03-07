@@ -70,10 +70,7 @@ and provides some benefits over Qonda such as creating data lineage snapshots.
 </div>
 
 <div id="tab2" class="tab-content" style="border: 1px solid black; padding: 15px;" markdown="1">
-  {% capture notebook %}
-  {% include Assign_Coords.md %}
-  {% endcapture %}
-  {{ notebook | markdownify }}
+ 
 </div>
 
 <div id="tab3" class="tab-content">
