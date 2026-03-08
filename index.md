@@ -50,7 +50,7 @@ title: Philip Norell's Portfolio
 </style>
 
 <div class="tabs">
-  <button class="tab-button" onclick="openTab(event, 'tab1')">About Me</button>
+  <button class="tab-button active" onclick="openTab(event, 'tab1')">About Me</button>
   <button class="tab-button" onclick="openTab(event, 'tab2')">ArcGIS API</button>
   <button class="tab-button" onclick="openTab(event, 'tab3')">Python</button>
   <button class="tab-button" onclick="openTab(event, 'tab4')">JSON</button>
@@ -58,7 +58,7 @@ title: Philip Norell's Portfolio
 
 <div id = "tab1" class = "tab-content active">
 
-<div>
+</div>
 
 <div id = "tab2" class = "tab-content">
   {% capture notebook %}
