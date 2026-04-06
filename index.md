@@ -5,7 +5,7 @@ title: Philip Norell's Portfolio
 
 # About me
 
-I'm an early GIS professional specializing in Enterprise and Web GIS. I enjoy solving difficult problems with a bit of research, a bit of code, and a bit of elbow grease!
+I'm an early career GIS professional specializing in Enterprise and Web GIS. I enjoy solving difficult problems with a bit of research, a bit of code, and a bit of elbow grease!
 
 I'm looking to contribute my skills to forward-thinking city I can be proud of as a resident and an employee. Please feel free to explore the tabs below.
 
