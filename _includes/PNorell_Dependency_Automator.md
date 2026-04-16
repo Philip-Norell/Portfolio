@@ -57,7 +57,7 @@ if web_exps:
               
 expdict = dict(zip(exptitle, expid)) 
 
-portal_item_dict = tempitemdictexp
+portal_item_dict = dict(zip(expid, expitems))
 
 ```
 
