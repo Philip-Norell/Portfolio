@@ -93,6 +93,7 @@ I'm looking to contribute my skills to forward-thinking city I can be proud of a
   <button class="tab-button active" onclick="openTab(event, 'tab1')">At Work I Take Pride in...</button>
   <button class="tab-button" onclick="openTab(event, 'tab2')">Academically...</button>
   <button class="tab-button" onclick="openTab(event, 'tab3')">In My Free Time...</button>
+  <button class="tab-button" onclick="openTab(event, 'tab4')">Other Examples of Work</button>
 </div>
 
 <div id="tab1" class="tab-content active"> 
@@ -129,6 +130,10 @@ I'm looking to contribute my skills to forward-thinking city I can be proud of a
       src="FantasyMap-1.webp" 
       style="width: 100%; min-width: 100%; height: auto; display: block; border: none;"
     >
+</div>
+
+<div id="tab2" class="tab-content">
+<iframe src="https://experience.arcgis.com/experience/9e1c23b36950488687bc3478798fce95" width="100%" height="500px"></iframe>
 </div>
 
 <script>
