@@ -137,14 +137,20 @@ I'm looking to contribute my skills to forward-thinking locality I can be proud 
   <strong> City of Billings Zoning Information Map </strong>
   <img src="Zoning info.png" style="width: 100%; min-width: 100%; height: auto; display: block; border: none;"
     >
-  <a href = "https://experience.arcgis.com/experience/9e1c23b36950488687bc3478798fce95" target="_blank"><u>Click to View</u></a>
+  <a href = "https://experience.arcgis.com/experience/9e1c23b36950488687bc3478798fce95" target="_blank"><u>Click to View Full Map</u></a>
   <br> 
   <br>
   <strong> City of Billings Bike Lane and Multi Use Trail Map </strong>
   <img src="Bikemap.png" style="width: 100%; min-width: 100%; height: auto; display: block; border: none;"
     >
-  <a href = "https://experience.arcgis.com/experience/9a1ccac651374d4081b5e5ad3996c064" target="_blank"><u>Click to View</u></a>
-  Bikemap.png
+  <a href = "https://experience.arcgis.com/experience/9a1ccac651374d4081b5e5ad3996c064" target="_blank"><u>Click to View Full Map</u></a>
+  <br> 
+  <br>
+  <strong> City of Billings Traffic Count Map </strong>
+  <img src="TrafficCountMap.png" style="width: 100%; min-width: 100%; height: auto; display: block; border: none;"
+    >
+  <a href = "https://www.billingsmt.gov/DocumentCenter/View/55565/2025-Traffic-Count-Map" target="_blank"><u>Click to View Full Map</u></a>
+  
 </div>
 
 <script>
