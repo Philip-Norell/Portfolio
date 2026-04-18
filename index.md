@@ -134,8 +134,8 @@ I'm looking to contribute my skills to forward-thinking locality I can be proud 
 </div>
 
 <div id="tab4" class="tab-content">
-  <strong> City of Billings </strong>
-  <img src="Zoning info.png" style="width: 100%; mind-width: 100%; height: auto; display: block; border: none;"
+  <strong> City of Billings Zoning Information Map </strong>
+  <img src="Zoning info.png" style="width: 100%; min-width: 100%; height: auto; display: block; border: none;"
     >
   <a href = "https://experience.arcgis.com/experience/9e1c23b36950488687bc3478798fce95" target="_blank"><u>Click to View</u></a>
 </div>
