@@ -190,7 +190,7 @@ for key in experience_dependency_dict: #Looping over experiences
             match = re.search(r'ID:\s*([\w]+)', webmapval, re.IGNORECASE) 
             idtext = match.group(1)
             mapItem = portal_item_dict.get(idtext) #Finds webmap associated with the id value
-            #returns a dictionary with details on supporting services. try_json is optional but may help convert the data to a dictionary.
+            #returns a dictionary with details on supporting services.
             dependencies = mapItem.get_data(try_json = True)['operationalLayers']
             
         
