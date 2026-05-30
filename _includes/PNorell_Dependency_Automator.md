@@ -110,8 +110,11 @@ def dependency_recursion(data,found_values=None):
                 print(f'Service {dep_id} does not exist')
         elif 'url' in data:
             info_str = data.get('url')
-            if r'/image' not in info_str.lower() and r'/mapviewer' not in info_str.lower() and not re.fullmatch(r'[\w\W]{32,38}', info_str):
-                found_values.append(info_str)
+            if (
+                r'/image' not in info_str.lower()
+                and r'/mapviewer' not in info_str.lower()
+                and not re.fullmatch(r'[\w\W]{32,38}', info_str):
+                        found_values.append(info_str)
             
         for key, value in data.items():
             dependency_recursion(value, found_values)
@@ -183,10 +186,13 @@ for key in experience_dependency_dict: #Looping over experiences
     try:
         for webmapval in experience_dependency_dict[key]: #Looping over webmaps corresponding to each experience
             innermost_dict = {}
-            match = re.search(r'ID:\s*([\w]+)', webmapval, re.IGNORECASE) #Uses regex matching to extract webmap itemid from the dictionary value.
+            #Uses regex matching to extract webmap itemid from the dictionary value.
+            match = re.search(r'ID:\s*([\w]+)', webmapval, re.IGNORECASE) 
             idtext = match.group(1)
             mapItem = portal_item_dict.get(idtext) #Finds webmap associated with the id value
-            dependencies = mapItem.get_data(try_json = True)['operationalLayers'] #returns a dictionary with details on supporting services. try_json is optional but may help convert the data to a dictionary.
+            #returns a dictionary with details on supporting services. try_json is optional but may help convert the data to a dictionary.
+            dependencies = mapItem.get_data(try_json = True)['operationalLayers']
+            
         
             for depinfo in dependencies: #Looping through the dependency JSON for a single web map
                 dep_info_list = dependency_recursion(depinfo) #Pulls supporting services out of dependency JSON and adds to list
