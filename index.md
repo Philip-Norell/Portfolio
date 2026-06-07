@@ -98,7 +98,7 @@ I'm looking to contribute my skills to a forward-thinking organization I can be 
 
 <div id="tab1" class="tab-content active"> 
   {% capture notebook %}
-    {% Rest_Endpoint_Data_Pipeline.md %}
+    {% include Rest_Endpoint_Data_Pipeline.md %}
   {% endcapture %}
   {{ notebook | markdownify }}
 </div>
