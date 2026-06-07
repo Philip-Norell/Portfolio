@@ -1,6 +1,3 @@
-
-**Solving complicated problems and creating reliable, low-maintenance systems, like with this AGOL dependency automator script.**
-
 <b>About:</b>
 This tool was inspired by a workflow developed during my time at the City of Billings, rewritten and heavily pared down for general public use with permission.
 
