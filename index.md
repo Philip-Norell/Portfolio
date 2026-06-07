@@ -104,8 +104,11 @@ I'm looking to contribute my skills to a forward-thinking organization I can be 
 </div>
 
 <div id="tab2" class="tab-content">
-    
-  </div>
+     {% capture notebook %}
+    {% include PNorell_Dependency_Automator.md %}
+  {% endcapture %}
+  {{ notebook | markdownify }}
+</div>
 
 
 <div id="tab3" class="tab-content">
