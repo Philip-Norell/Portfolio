@@ -98,14 +98,14 @@ I'm looking to contribute my skills to a forward-thinking organization I can be 
 
 <div id="tab1" class="tab-content active"> 
   {% capture notebook %}
-    {% include Rest_Endpoint_Data_Pipeline.md %}
+  {% include Rest_Endpoint_Data_Pipeline.md %}
   {% endcapture %}
   {{ notebook | markdownify }}
 </div>
 
 <div id="tab2" class="tab-content">
-     {% capture notebook %}
-    {% include PNorell_Dependency_Automator.md %}
+  {% capture notebook %}
+  {% include PNorell_Dependency_Automator.md %}
   {% endcapture %}
   {{ notebook | markdownify }}
 </div>
