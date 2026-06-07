@@ -1,5 +1,4 @@
-<b>About:</b>
-This tool was inspired by a workflow developed during my time at the City of Billings, rewritten and heavily pared down for general public use with permission.
+<b>About:</b> This tool was inspired by a workflow developed during my time at the City of Billings, rewritten and heavily pared down for general public use with permission.
 
 <b>Problem:</b> Knowing what will change if a feature class or service is updated or deleted can be very difficult, espeically in large organizations. Conversely, if a webmap or application is malfunctioning, it can be difficult to identify the underlying data for troubleshooting. Data lineage documentation that captures and displays the entire data flow in an easily readable format, such as a formatted Excel Table, is extremely tedious to create manually and vulnerable to neglect. Qonda Reports provides such functionality, but is relatively expensive and cannot document at the feature class level. 
 
