@@ -91,7 +91,7 @@ I'm looking to contribute my skills to a forward-thinking organization I can be 
 
 <div class="tabs">
   <button class="tab-button active" onclick="openTab(event, 'tab1')">Esri REST Service ETL Pipeline</button>
-  <button class="tab-button" onclick="openTab(event, 'tab2')">Data Governeance Sample Script</button>
+  <button class="tab-button" onclick="openTab(event, 'tab2')">Data Governance Sample Script</button>
   <button class="tab-button" onclick="openTab(event, 'tab3')">Personal Interests</button>
   <button class="tab-button" onclick="openTab(event, 'tab4')">Other Examples of Work</button>
 </div>
