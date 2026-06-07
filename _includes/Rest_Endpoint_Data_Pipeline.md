@@ -36,12 +36,12 @@ def directory_crawl(root, service_dict = None):
 
 
 def json_walk(json_file, root, service_dict):
-    if isinstance(json_file, dict):
     """
     The main logic that parses JSON versions of each page
     Only configured to consume vector based feature and map services.
     """        
-        # Checks service page for map servives and appends them to root.
+    if isinstance(json_file, dict):
+            # Checks service page for map servives and appends them to root.
         if json_file.get("type") == "MapServer":
             servicename = json_file.get("name")
             service = servicename.split("/")[-1]
@@ -79,7 +79,7 @@ def json_walk(json_file, root, service_dict):
 def service_to_postgis(url, name, db_schema, db_engine):
     chunk_list = []
     try:
-        count = requests.get(f"{url}/query?where=1=1&returnCountonly=true&f=json", headers).json()
+        count = requests.get(f"{url}/query?where=1=1&returnCountonly=true&f=json").json()
     except Exception as e:          
         print(f"Request for {url} at count stage failed:{e}")
     recordcount = count["count"]
@@ -97,14 +97,14 @@ def service_to_postgis(url, name, db_schema, db_engine):
         print(iter)
         try:
             chunk = geopandas.read_file(
-                f'{url}/query?where=1=1&f=geojson&outFields=*&resultRecordCount=100&resultOffset={iter*1000}&outSR=4326')
+                f'{url}/query?where=1=1&f=geojson&outFields=*&resultRecordCount=1000&resultOffset={iter*1000}&outSR=4326')
         except Exception as e:          
             print(f"Request for {url} at iteration stage failed:{e}")
             continue
         chunk_list.append(chunk)
     table = pd.concat(chunk_list, ignore_index = True)
     try:
-        table.to_postgis(f"{name}", db_engine, if_exists="fail", schema = "schema")
+        table.to_postgis(f"{name}", db_engine, if_exists="fail", schema = db_schema)
     except Exception as e:
         print(f' Failed to add table to database: {e}')
     print(f'{recordcount} records successfully added to database from {name}')   
