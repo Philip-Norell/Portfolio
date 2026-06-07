@@ -51,6 +51,7 @@ I'm looking to contribute my skills to a forward-thinking organization I can be 
 /* Tabs styling */
 .tabs {
   display: flex;
+  flex-wrap: wrap;
   border-bottom: 2px solid #ddd;
   margin-bottom: 1rem;
 }
