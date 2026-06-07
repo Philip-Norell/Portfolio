@@ -1,3 +1,9 @@
+<b>About:</b>
+This tool was inspired by the huge amount of readily avaiable data distributed across municipal and county REST endpoints. I recognized recently that such data would be worth an incredible amount if packaged and delivered correctly, so I created this script to scrape public Esri REST directories and pipe them directly into my personal Postgres/PostGIS database.
+
+<b>Method:</b>
+This script uses a recursive method to identify all available layers with a REST directory and add them to a dictionary. This dictionary is then used as an input for ETL from geojson directly into PostGIS. 
+
 ```python
 import pandas as pd
 import geopandas
@@ -13,7 +19,7 @@ import time
 def directory_crawl(root, service_dict = None):
     """
     Function that takes a REST directory root like
-    https://website.domain/arcgis_web/rest/services,
+    https://website.domain/arcgis/rest/services,
     scrapes it, and returns a dictionary of every available
     service layer in the format {layer name : layer url}
     """
