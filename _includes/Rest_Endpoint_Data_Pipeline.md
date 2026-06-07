@@ -26,7 +26,7 @@ def directory_crawl(root, service_dict = None):
         service_dict = {}  
     json_directory = f"{root}?f=json"
     try:
-        directory = requests.get(json_directory, headers).json()
+        directory = requests.get(json_directory).json()
     except Exception as e:          
         print(f"Request for {root} failed:{e}")
         return service_dict
