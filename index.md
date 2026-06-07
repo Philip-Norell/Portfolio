@@ -90,9 +90,9 @@ I'm looking to contribute my skills to a forward-thinking organization I can be 
 </style>
 
 <div class="tabs">
-  <button class="tab-button active" onclick="openTab(event, 'tab1')">At Work I Take Pride in...</button>
-  <button class="tab-button" onclick="openTab(event, 'tab2')">Academically...</button>
-  <button class="tab-button" onclick="openTab(event, 'tab3')">In My Free Time...</button>
+  <button class="tab-button active" onclick="openTab(event, 'tab1')">Esri REST Service ETL Pipeline</button>
+  <button class="tab-button" onclick="openTab(event, 'tab2')">Data Governeance Sample Script</button>
+  <button class="tab-button" onclick="openTab(event, 'tab3')">Personal Interests</button>
   <button class="tab-button" onclick="openTab(event, 'tab4')">Other Examples of Work</button>
 </div>
 
@@ -104,13 +104,15 @@ I'm looking to contribute my skills to a forward-thinking organization I can be 
 </div>
 
 <div id="tab2" class="tab-content">
-    <strong>I enjoy learning about and visualizing planning and urban design concepts, like in this map that displays data on</strong>
+    
+  </div>
+
+
+<div id="tab3" class="tab-content">
+  <strong>I enjoy learning about and visualizing planning and urban design concepts, like in this map that displays data on</strong>
     <strong>zoning restrictiveness in over 2,800 municipalities across the United States.</strong>
     <p></p>
-    <p>Click a municipality to view more information.</p>
-
-       
-  
+    <p>Click a municipality to view more information.</p>  
   <div class="map-frame">
     <iframe 
       src="zri_index_map.html" 
@@ -120,11 +122,7 @@ I'm looking to contribute my skills to a forward-thinking organization I can be 
       loading="lazy">
     </iframe>
     </div>  
-  </div>
-
-
-<div id="tab3" class="tab-content">
-  <strong> I extend my passion for mapping into the realm of fantasy!</strong>
+  <strong> I also extend my passion for mapping into the realm of fantasy!</strong>
   <div class="map-frame" style="width: 100%; max-width: 100%;">
     <img 
       src="FantasyMap-1.webp" 
