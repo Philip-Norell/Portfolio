@@ -82,6 +82,7 @@ def service_to_postgis(url, name, db_schema, db_engine):
         count = requests.get(f"{url}/query?where=1=1&returnCountonly=true&f=json").json()
     except Exception as e:          
         print(f"Request for {url} at count stage failed:{e}")
+        return
     recordcount = count["count"]
     print(f'Service {name} has {recordcount} records')
     i = math.ceil(recordcount/1000)
