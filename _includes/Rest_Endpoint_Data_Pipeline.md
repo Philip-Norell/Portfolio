@@ -1,4 +1,4 @@
-<b>About:</b> This tool was inspired by the huge amount of readily available data distributed across municipal and county REST endpoints. I recognized recently that such data would be worth an incredible amount if packaged and delivered correctly, so I created this script to scrape public Esri REST directories and pipe them directly into my personal Postgres/PostGIS database.
+<b>About:</b> This tool was inspired by the huge amount of readily available data distributed across municipal and county REST endpoints. I recognized recently that such data would be incredibly valuable if packaged and delivered correctly, so I created this script to scrape public Esri REST directories and pipe them directly into my personal Postgres/PostGIS database.
 
 <b>Method:</b>
 This script uses a recursive method to identify all available layers with a REST directory and add them to a dictionary. This dictionary is then used as an input for ETL from geojson directly into PostGIS. 
