@@ -8,7 +8,7 @@ import pandas as pd
 import geopandas
 import requests
 import math
-import sqlalchemy, geoalchemy2, psycopg2
+import sqlalchemy
 import time
 ```
 
