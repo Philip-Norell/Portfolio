@@ -98,7 +98,7 @@ def service_to_postgis(url, name, db_schema, db_engine):
         print(step)
         try:
             chunk = geopandas.read_file(
-                f'{url}/query?where=1=1&f=geojson&outFields=*&resultRecordCount=1000&resultOffset={iter*1000}&outSR=4326')
+                f'{url}/query?where=1=1&f=geojson&outFields=*&resultRecordCount=1000&resultOffset={step*1000}&outSR=4326')
         except Exception as e:          
             print(f"Request for {url} at iteration stage failed:{e}")
             continue
